@@ -1,7 +1,20 @@
-# 100-Days-Of-Python-Code-2024
+<h1 align="center">  
+100-Days-Of-Python-Code-2024
+</h1>
 
-<img src="https://img-b.udemycdn.com/course/750x422/2776760_f176_10.jpg" alt="Image Description" width="1272" height = "550">
+<h4 align="center">
+Starting from : June 15, 2024
+</h4>
 
 # Introduction
-I'm diving into the world of data science and enhancing my skills by participating in  [#100daysofpythoncode](https://www.udemy.com/course/100-days-of-code/) challenge. This challenge is created by [Angela Yu](https://www.github.com/angelabauer). This journey is designed to enhance my proficiency in Python, a crucial language for data science. This challnege will not only enchance my coding skills, it will also show my consistency and discipline towards my learning.
+I'm diving into the world of data science and therefore Python is a pre-requisite for that. I am taking up [#100DaysofPythonCode](https://www.udemy.com/course/100-days-of-code/) challenge which will not only help me to see Python from the glass of data science but it will also help me to learn Python in a general manner. This challenge is created by [Angela Yu](https://www.github.com/angelabauer), which will not only enchance my coding skills, it will also show my consistency and discipline towards my learning.
+
+# Content
+
+## Beginner
+
+| Day   |  Topic  | Status  |
+|-------|---------|---------|
+| Day 1 |  Working With Variables in Python to Manage Data | Completed ✅ |
+
 
