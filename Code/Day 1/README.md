@@ -5,7 +5,13 @@
 - **Commenting**
 - **Debugging** 
 - **String Manipulation** 
-- **Variables** 
+- **Variables**
+
+## Auditorium Exercise
+1. **Printing**
+2. **Debugging**
+3. **Input Function**
+4. **Variables** 
 
 ## Project - `Band Name Generator`
 
