@@ -15,6 +15,7 @@ I'm diving into the world of data science and therefore Python is a pre-requisit
 
 | Day   |  Topic  | Status  |
 |-------|---------|---------|
-| Day 1 |  Working With Variables in Python to Manage Data | Completed ✅ |
+| Day 1 | Working With Variables in Python to Manage Data | Completed ✅ |
+| Day 2 | Understandind Datatypes and How to Manipulate Strings | Completed ✅ |
 
 
