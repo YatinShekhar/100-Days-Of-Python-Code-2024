@@ -1,11 +1,11 @@
 # Day 1 - Working with Variables in Python to Manage Data
 
 ## Topics
-- Printing
-- Commenting
-- Debugging
-- String Manipulation
-- Variables
+- **Printing** 
+- **Commenting**
+- **Debugging** 
+- **String Manipulation** 
+- **Variables** 
 
 ## Project - `Band Name Generator`
 
