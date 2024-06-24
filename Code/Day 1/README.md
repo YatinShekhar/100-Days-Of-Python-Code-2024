@@ -1,13 +1,13 @@
-# Day 1 - Working with Variables in Python to Manage Data
+# Day 1 - Working with Variables in Python to Manage Data ⚡
 
-## Topics
+## Topics 📃
 - **Printing** 
 - **Commenting**
 - **Debugging** 
 - **String Manipulation** 
 - **Variables**
 
-## Auditorium Exercise
+## Auditorium Exercise ☄
 
 ### **1. Printing**
 ```python
@@ -32,6 +32,7 @@ print(len(input()))
 ```
 
 ### **4. Variables**
+Write a program that switches the value stored in both the vaiables?
 ```python
 a = input()
 b = input()
@@ -44,7 +45,8 @@ print("a: " + a)
 print("b: " + b)
 ```
 
-## Project - Band Name Generator 🚀
+# Project - Band Name Generator 🚀
+Write down a code that produces name for your band based on the location you grew up in and your pet's name?
 ```python
 print("Welcome to the Band Name Generator!")
 
