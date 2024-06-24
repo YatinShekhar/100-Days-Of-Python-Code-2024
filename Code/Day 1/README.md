@@ -8,12 +8,54 @@
 - **Variables**
 
 ## Auditorium Exercise
-1. [Printing](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/blob/main/Code/Day%201/exercise.py#L1) 
-2. [Debugging](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/blob/main/Code/Day%201/exercise.py#L10)
-3. [Input Function](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/blob/main/Code/Day%201/exercise.py#L18)
-4. [Variables](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/blob/main/Code/Day%201/exercise.py#L23)
 
-## Project - [Band Name Generator](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/blob/main/Code/Day%201/main.py)
+### **1. Printing**
+```python
+print("""1. Mix 500g of Flour, 10g Yeast and 300ml Water in a bowl.
+2. Knead the dough for 10 minutes.
+3. Add 3g of Salt.
+4. Leave to rise for 2 hours.
+5. Bake at 200 degrees C for 30 minutes.""")
+```
 
-![Animation3](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/assets/121398971/b476a2b8-5548-4f26-9eac-7ba812d0ec0d)
+### **2. Debugging Practice**
+```python
+print("Day 1 - String Manipulation")
+print('String Concatenation is done with the "+" sign.')
+print('e.g. print("Hello " + "world")')
+print("New lines can be created with a backslash and n.")
+```
+
+### **3. Input Function**
+```python
+print(len(input()))
+```
+
+### **4. Variables**
+```python
+a = input()
+b = input()
+
+c = a
+a = b
+b = c
+
+print("a: " + a)
+print("b: " + b)
+```
+
+## Project - Band Name Generator 🚀
+```python
+print("Welcome to the Band Name Generator!")
+
+print("What is the city name you grew up in?")
+city = input()
+
+print("What is your pet's name?")
+pet = input()
+
+print(f"Your band name could be {city} {pet}.")
+```
+
+
 
