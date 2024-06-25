@@ -1,4 +1,4 @@
-# Day 4 - Control Flow and Logical Operators ⚡
+# Day 3 - Control Flow and Logical Operators ⚡
 
 ## Topics 📃
 - **Conditional Statements**
@@ -56,6 +56,65 @@ if year % 4 == 0:
     print("Leap year")
 else:
     print("Not leap year")
+```
+
+## **11. Pizza Order Practice**
+
+Write a program that creates a final bill for the user on the basis of their order.
+
+```python
+print("Thank you for choosing Python Pizza Deliveries!")
+size = input() 
+add_pepperoni = input()
+extra_cheese = input()
+
+if size == "S":
+  bill = 15
+  if add_pepperoni == "Y":
+    bill += 2
+else:
+  if size == "M":
+    bill = 20
+  else:
+    bill = 25
+  if add_pepperoni == "Y":
+    bill += 3
+if extra_cheese == "Y":
+  bill += 1
+print(f"Your final bill is: ${bill}.")
+```
+
+## **12. Love Calculator**
+
+Write a program that tests the compatibility between two people bases on their names and returns the score.
+
+```python
+name1 = input() 
+name2 = input()
+combined_name = name1.upper() + name2.upper()
+
+T = combined_name.count("T") 
+R = combined_name.count("R")
+U = combined_name.count("U")
+E = combined_name.count("E")
+total_true_count = T + R + U + E
+
+L = combined_name.count("L")
+O = combined_name.count("O")
+V = combined_name.count("V")
+E = combined_name.count("E")
+total_love_count = L + O + V + E
+
+love_score = int(str(total_true_count) + str(total_love_count))
+your_score = f"Your score is {love_score}"
+
+
+if love_score < 10 or love_score > 90:
+  print(f"{your_score}, you go together like coke and mentos.")
+elif love_score > 40 and love_score < 50:
+  print(f"{your_score}, you are alright together.")
+else:
+  print(f"{your_score}.")
 ```
 
 # Project - Treasure Island 🚀
