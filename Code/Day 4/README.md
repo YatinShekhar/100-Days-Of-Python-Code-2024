@@ -33,6 +33,29 @@ print(f"{names[random_int]} is going to buy the meal today!")
 
 ## **15. Treasure Map**
 
+Write a program that will mark a spot on the map with an X.
+
+```python
+line1 = ["⬜️","️⬜️","️⬜️"]
+line2 = ["⬜️","⬜️","️⬜️"]
+line3 = ["⬜️️","⬜️️","⬜️️"]
+
+map = [line1, line2, line3]
+
+print("Hiding your treasure! X marks the spot.")
+position = input()
+
+row = ['1', '2', '3']
+column = ['A', 'B', 'C']
+
+row_index = row.index(position[1])
+column_index = column.index(position[0])
+
+map[row_index][column_index] = 'X'
+
+print(f"{line1}\n{line2}\n{line3}")
+```
+
 # Project - Rock Paper Scissors 🚀
 
 ```python
