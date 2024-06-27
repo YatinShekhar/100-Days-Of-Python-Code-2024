@@ -28,14 +28,14 @@ print("New lines can be created with a backslash and n.")
 
 ## **3. Input Function**
 ```python
-print(len(input()))
+print(len(input('Enter the input:\n')))
 ```
 
 ## **4. Variables**
 Write a program that switches the value stored in both the vaiables?
 ```python
-a = input()
-b = input()
+a = input('a: ')
+b = input('b: ')
 
 c = a
 a = b
