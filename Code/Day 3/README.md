@@ -13,11 +13,12 @@
 Write a program that works out whether if a given number is an odd or even number.
 
 ```python
-number = int(input())
+number = int(input('Enter the number: '))
+
 if number % 2 == 0:
-  print("This is an even number.")
+    print("This is an even number.")
 else:
-  print("This is an odd number.")
+    print("This is an odd number.")
 ```
 
 ## **9. BMI 2.0**
@@ -25,37 +26,40 @@ else:
 Create an advanced version of BMI calculator you made in Exercise 6. The calculator should also tell the interpretation of the BMI based on the BMI value.
  
 ```python
-height = float(input())
-weight = int(input())
-bmi = weight / height ** 2
-if bmi < 18.5:
-  print(f"Your BMI is {bmi}, you are underweight.")
-elif bmi >= 18.5 and bmi < 25:
-  print(f"Your BMI is {bmi}, you have a normal weight.")
-elif bmi >= 25 and bmi < 30:
-  print(f"Your BMI is {bmi}, you are slightly overweight.")
-elif bmi >= 30 and bmi < 35:
-  print(f"Your BMI is {bmi}, you are obese.")
+height = float(input('Enter the height(in metre): '))
+weight = int(input('Enter the weight(in kg): '))
+
+BMI = round(weight / height ** 2, 2)
+
+if BMI < 18.5:
+    print(f"Your BMI is {BMI}, you are underweight.")
+elif 18.5 <= BMI < 25:
+    print(f"Your BMI is {BMI}, you have a normal weight.")
+elif 25 <= BMI < 30:
+    print(f"Your BMI is {BMI}, you are slightly overweight.")
+elif 30 <= BMI < 35:
+    print(f"Your BMI is {BMI}, you are obese.")
 else:
-  print(f"Your BMI is {bmi}, you are clinically obese.")
+    print(f"Your BMI is {BMI}, you are clinically obese.")
 ```
   
 ## **10. Leap Year**
 
-Write a program that works out whether if a given year is a leap year or not. Before writing the program, make your familiar with the condition when a year is considered leap.
+Write a program that works out whether if a given year is a leap year or not. Before writing the program, make yourself familiar with the condition when a year is considered leap.
 
 ```python
-year = int(input())
+year = int(input('Enter the year: '))
+
 if year % 4 == 0:
-  if year % 100 == 0:
-    if year % 400 == 0:
-      print("Leap year")
+    if year % 100 == 0:
+        if year % 400 == 0:
+            print("Leap year")
+        else:
+            print("Not a leap year")
     else:
-      print("Not leap year")
-  else:
-    print("Leap year")
+        print("Leap year")
 else:
-    print("Not leap year")
+    print("Not a leap year")
 ```
 
 ## **11. Pizza Order Practice**
@@ -64,23 +68,27 @@ Write a program that creates a final bill for the user on the basis of their ord
 
 ```python
 print("Thank you for choosing Python Pizza Deliveries!")
-size = input() 
-add_pepperoni = input()
-extra_cheese = input()
 
-if size == "S":
-  bill = 15
-  if add_pepperoni == "Y":
-    bill += 2
-else:
-  if size == "M":
+size = input('What size pizza do you want? S, M, or L')
+add_pepperoni = input('Do you want pepperoni? Y or N')
+extra_cheese = input('Do you want extra cheese? Y or N')
+
+if size == 'S':
+    bill = 15
+elif size == 'M':
     bill = 20
-  else:
+else:
     bill = 25
-  if add_pepperoni == "Y":
-    bill += 3
-if extra_cheese == "Y":
-  bill += 1
+
+if add_pepperoni == 'Y':
+    if size == 'S':
+        bill += 2
+    else:
+        bill += 3
+
+if extra_cheese == 'Y':
+    bill += 1
+
 print(f"Your final bill is: ${bill}.")
 ```
 
@@ -89,8 +97,9 @@ print(f"Your final bill is: ${bill}.")
 Write a program that tests the compatibility between two people bases on their names and returns the score.
 
 ```python
-name1 = input() 
-name2 = input()
+name1 = input('Enter the first name: ') 
+name2 = input('Enter the second name: ')
+
 combined_name = name1.upper() + name2.upper()
 
 T = combined_name.count("T") 
@@ -108,13 +117,12 @@ total_love_count = L + O + V + E
 love_score = int(str(total_true_count) + str(total_love_count))
 your_score = f"Your score is {love_score}"
 
-
 if love_score < 10 or love_score > 90:
-  print(f"{your_score}, you go together like coke and mentos.")
-elif love_score > 40 and love_score < 50:
-  print(f"{your_score}, you are alright together.")
+    print(f"{your_score}, you go together like coke and mentos.")
+elif 40 < love_score < 50:
+    print(f"{your_score}, you are alright together.")
 else:
-  print(f"{your_score}.")
+    print(f"{your_score}.")
 ```
 
 # Project - Treasure Island 🚀
@@ -150,20 +158,19 @@ print("Your mission is to find the treasure.")
 
 direction = input('You are at a cross road. Where do you want to go? Type "left" or "right"\n').lower()
 if direction == "left":
-          decision = input('Now you are at a lake. What do you want to do? Type "swim" or "wait"\n').lower()
-          if decision == 'wait':
-                    door = input('Now you have three doors in front of you. Which one will you go through? "blue", "yellow", or "red"\n').lower()
-                    if door == "yellow":
-                              print("You win.")
-                    elif door == "red":
-                              print("Burned by fire. Game over")
-                    elif door == "blue":
-                              print("Eaten by beasts. Game over")
-                    else:
-                              print("Game over")                              
-          else:
-                    print("Attacked by trout. Game over")
-                    
+    decision = input('Now you are at a lake. What do you want to do? Type "swim" or "wait"\n').lower()
+    if decision == 'wait':
+        door = input('Now you have three doors in front of you. Which one will you go through? "blue", "yellow", or "red"\n').lower()
+        if door == "yellow":
+            print("You win.")
+        elif door == "red":
+            print("Burned by fire. Game over")
+        elif door == "blue":
+            print("Eaten by beasts. Game over")
+        else:
+            print("Game over")                              
+    else:
+        print("Attacked by trout. Game over")                    
 else:
-          print("You fall into a hole. Game over")
+    print("You fall into a hole. Game over")
 
