@@ -21,4 +21,5 @@ This challenge is created by [Angela Yu](https://www.github.com/angelabauer), wh
 | [Day 2](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/tree/main/Code/Day%202) | Understandind Datatypes and How to Manipulate Strings | June 16, 2024 | Completed ✅ |
 | [Day 3](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/tree/main/Code/Day%203) | Control Flow and Logical Operators | June 24, 2024 | Completed ✅ |
 | [Day 4](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/tree/main/Code/Day%204) | Randomisation and Python Lists | June 24, 2024 | Completed ✅ | 
+| [Day 5](https://github.com/YatinShekhar/100-Days-Of-Python-Code-2024/tree/main/Code/Day%205) | Python Loops | June 27, 2024 | Completed ✅ |
 
