@@ -11,13 +11,14 @@
 Write a virtual coin toss program that tells a random heads or tails.
 
 ```python
-import random  
+import random
+
 random_int = random.randint(0,1)
 
 if random_int == 0:
-  print("Tails")
+    print("Tails")
 else:
-  print("Heads")
+    print("Heads")
 ```
 
 ## **14. Banker Roulette**
@@ -26,9 +27,13 @@ Write a program that will select a random name from a list of names. The person 
 
 ```python
 import random
-names = ["Angela", "Ben", "Jenny", "Michael", "Chloe"]
-random_int = random.randint(0, len(names) - 1)
-print(f"{names[random_int]} is going to buy the meal today!")
+
+names = input("Enter the names(comma-separated): ")
+
+name_list = names.split(', ')
+random_int = random.randint(0, len(name_list) - 1)
+
+print(f"{name_list[random_int]} is going to buy the meal today!")
 ```
 
 ## **15. Treasure Map**
@@ -43,7 +48,7 @@ line3 = ["⬜️️","⬜️️","⬜️️"]
 map = [line1, line2, line3]
 
 print("Hiding your treasure! X marks the spot.")
-position = input()
+position = input("Enter the position where you want to hide your treasure: ")
 
 row = ['1', '2', '3']
 column = ['A', 'B', 'C']
@@ -88,43 +93,40 @@ scissors = '''
 ---.__(___)
 '''
 
-random_num = random.randint(0,2)
+random_num = random.randint(0, 2)
 my_number = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors.\n"))
 
-if my_number == 0:
-    print(rock)
-elif my_number == 1:
-    print(paper)
-elif my_number == 2:
-    print(scissors)
+number = [0, 1, 2]
+
+if my_number not in number:
+    print("Invalid number: You lose")
 else:
-    print("Invalid number")
-
-if my_number == random_num:
-    print("It's a draw")
-elif my_number > random_num:
-    if my_number == 2 and random_num == 0:
-        print("You lose")
-    elif my_number >= 3:
-        print("Invalid number. You lose")
+    if my_number == 0:
+        print(rock)
+    elif my_number == 1:
+        print(paper)
     else:
-        print("You win")
-elif my_number < random_num:
-    if my_number == 0 and random_num == 2:
-        print("You win")
-    elif my_number < 0:
-        print("Invalid number. You lose")
+        print(scissors)
+
+    print("Computer chose:")
+
+    if random_num == 0:
+        print(rock)
+    elif random_num == 1:
+        print(paper)
     else:
-        print("You lose")
+        print(scissors)
 
-
-
-print("Computer chose:")
-
-if random_num == 0:
-    print(rock)
-elif random_num == 1:
-    print(paper)
-else:
-    print(scissors)
-
+    if my_number == random_num:
+        print("It's a draw")
+    elif my_number > random_num:
+        if my_number == 2 and random_num == 0:
+            print("You lose")
+        else:
+            print("You win")
+    else:
+        if my_number == 0 and random_num == 2:
+            print("You win")
+        else:
+            print("You lose")
+```
