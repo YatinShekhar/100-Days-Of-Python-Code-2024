@@ -54,7 +54,7 @@ print(f"The highest score in the class is: {highest_score}")
 
 ## 18. Adding Even Numbers
 
-write a program that calculates the sum of all the even numbers from 1 to X. If X is 100 then the first even number would be 2 and the last one is 100.\
+Write a program that calculates the sum of all the even numbers from 1 to X. If X is 100 then the first even number would be 2 and the last one is 100.
 Important, there should only be 1 print statement in your console output.
 
 ```python
@@ -67,9 +67,31 @@ for n in range(0, target + 1, 2):
 print(sum)
 ```
 
+## 19. FizzBuzz
+
+Write a program that automatically prints the solution to the FizzBuzz game. These are the rules of the FizzBuzz game:
+
+- When the number is divisible by 3 then instead of printing the number it should print "Fizz".
+- When the number is divisible by 5, then instead of printing the number it should print "Buzz".`
+- And if the number is divisible by both 3 and 5 e.g. 15 then instead of the number it should print "FizzBuzz"
+
+```python
+for num in range(1, 101):
+    if num % 3 == 0 and num % 5 == 0:
+        print("FizzBuzz")
+    elif num % 3 == 0:
+        print("Fizz")
+    elif num % 5 == 0:
+        print("Buzz")
+    else:
+        print(num)
+```
+
 # Project - PyPassword Generator 🚀
 
-Write a program which creates a password consisting of letters, numbers and symbols in a random order.
+Write a program which creates a password consisting of letters, numbers and symbols in a random order. Create two level in this program
+- **1. Easy Level:** Order not randomised
+- **2. Hard Level:** Order of characters randomised
 
 ```python
 import random
@@ -101,18 +123,19 @@ for n in range(0,nr_numbers):
     random_numbers.append(numbers[a])
 
 random_password = random_letters + random_symbols + random_numbers
+```
+Till this point, the code for both the level is same. And now we will be writing code for both the level which would be slightly different
 
-#Eazy Level - Order not randomised:
-#e.g. 4 letter, 2 symbol, 2 number = JduE&!91
-
+### **Easy level:**
+```python
 easy_password = ''
 for n in random_password:
     easy_password = easy_password + n
 print(f"Easy password: {easy_password}")
+```
 
-#Hard Level - Order of characters randomised:
-#e.g. 4 letter, 2 symbol, 2 number = g^2jk8&P
-
+### **Hard level:**
+```python
 hard_password = ''
 random.shuffle(random_password)
 for n in random_password:
